@@ -6,18 +6,30 @@ Hỗ trợ giáo viên trong việc quản lý và lưu trữ thông tin của h
 
 ## Phạm vi và đối tượng
 
-Trường Tiểu học (~500 học sinh).\
+Trường Tiểu học.\
 Dành cho giáo viên chủ nhiệm và ban giám hiệu nhà trường.
 
-## Chức năng
 
-- Đăng ký tài khoản cho giáo viên (chủ nhiệm) và ban giám hiệu.
-- Đăng nhập, đăng xuất.
-- Quản lý hồ sơ học sinh.
-- Quản lý thông tin chung của lớp học.
-- Quản lý điểm số, học lực các môn.
-- Đánh giá học sinh, nhận xét.
-- Khen thưởng, xếp loại.
+## Phân quyền:
+
+### Chức năng dành cho giáo viên (chủ nhiệm):
+- Đăng nhập theo tài khoản đã được cấp (bởi ban giám hiệu)/ Đăng xuất;
+- Quản lý tài khoản: cho phép sửa username/ password;
+- Quản lý thông tin cá nhân: cho phép xem, sửa thông tin cá nhân của chính mình;
+- Quản lý học sinh: cho phép thêm/ sửa/ xóa thông tin học sinh, phụ huynh mà giáo viên đó chủ nhiệm;
+- Quản lý điểm số, xếp loại học lực của học sinh do mình chủ nhiệm;
+- Thống kê, đánh giá các số liệu học tập bằng biểu đồ;
+- Xem danh sách giáo viên của trường.
+
+### Chức năng dành cho ban giám hiệu (hiệu trưởng):
+- Đăng nhập/ Đăng xuất;
+- Quản lý tài khoản: cho phép sửa username/ password;
+- Quản lý thông tin cá nhân: cho phép xem, sửa thông tin cá nhân của chính mình;
+- Quản lý giáo viên: xem danh sách, thêm/sửa/xóa thông tin của giáo viên;
+- Quản lý học sinh: cho phép thêm/ sửa/ xóa thông tin học sinh, phụ huynh của tất cả học sinh;
+- Thêm tài khoản mặc định cho giáo viên chủ nhiệm. 
+- Quản lý điểm số, xếp loại học lực của học sinh của tất cả học sinh;
+- Thống kê, đánh giá các số liệu học tập bằng biểu đồ;
 
 ## Công nghệ sử dụng
 
@@ -62,3 +74,7 @@ export const api = axios.create(({
 ## Lược đồ quan hệ thực thể
 
 ![](./entity–relationship.png)
+
+## Lược đồ dữ liệu quan hệ
+
+![](./EER.png)
